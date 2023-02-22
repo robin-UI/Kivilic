@@ -132,7 +132,7 @@ const Form = () => {
                                 onChange={submitFile}
                             />
 
-                            <button type="button" onClick={() => hiddneFiles.current.click()} class="flex justify-between w-full text-[#20404A] bg-[#BFBFBF] hover:bg-[#BFBFBF] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none">
+                            <button type="button" onClick={() => hiddneFiles.current.click()} className="flex justify-between w-full text-[#20404A] bg-[#BFBFBF] hover:bg-[#BFBFBF] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none">
                                 <h2>Upload CV</h2> 
                                 <img src={upload} alt="Upload Logo" className="w-[20px] h-[20px] " />
                             </button>
@@ -146,8 +146,8 @@ const Form = () => {
                         </> :
                             <div>
                                 <p className="block mb-2 text-sm font-normal text-[#20404A] dark:text-white">Your file</p>
-                                <div class="w-full flex justify-between items-center max-w-sm p-4 bg-blue-100 border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700">
-                                    <h5 class="text-base font-normal text-gray-900 md:text-xl dark:text-white">
+                                <div className="w-full flex justify-between items-center max-w-sm p-4 bg-blue-100 border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700">
+                                    <h5 className="text-base font-normal text-gray-900 md:text-xl dark:text-white">
                                         {fileName}
                                     </h5>
                                     <FaTrashAlt className=" cursor-pointer" onClick={()=> setfile(null)}/>
@@ -160,7 +160,7 @@ const Form = () => {
                 </div>
             </form>
 
-            <button type="button" class="text-white bg-[#04a8e8] hover:bg-blue-500 focus:ring-4 focus:ring-blue-300 font-normal rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Submit</button>
+            <button type="button" className="text-white bg-[#04a8e8] hover:bg-blue-500 focus:ring-4 focus:ring-blue-300 font-normal rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Submit</button>
 
         </div>
     )

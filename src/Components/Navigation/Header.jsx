@@ -2,7 +2,7 @@ import './Header.css'
 import logo from '../../assets/logo.png'
 import { useState } from 'react'
 
-const Header = () => {
+const Header = ({setnav}) => {
 
     const [header, setHeader] = useState(false)
     const scrollheader = () => {
@@ -47,11 +47,9 @@ const Header = () => {
                             </li>
                         </ul>
                         <button
-                            data-collapse-toggle="navbar-cta"
+                            onClick={setnav}
                             type="button"
                             className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                            aria-controls="navbar-cta"
-                            aria-expanded="false"
                         >
                             <span className="sr-only">Open main menu</span>
                             <svg

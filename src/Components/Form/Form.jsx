@@ -145,8 +145,9 @@ const Form = () => {
                             </p>
                         </> :
                             <div>
+                                <p className="block mb-2 text-sm font-normal text-[#20404A] dark:text-white">Your file</p>
                                 <div class="w-full flex justify-between items-center max-w-sm p-4 bg-blue-100 border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700">
-                                    <h5 class="text-base font-medium text-gray-900 md:text-xl dark:text-white">
+                                    <h5 class="text-base font-normal text-gray-900 md:text-xl dark:text-white">
                                         {fileName}
                                     </h5>
                                     <FaTrashAlt className=" cursor-pointer" onClick={()=> setfile(null)}/>

@@ -1,9 +1,33 @@
-import logo from '../assets/logo.png'
+import './Header.css'
+import logo from '../../assets/logo.png'
+import { useState } from 'react'
 
 const Header = () => {
+
+    const [header, setHeader] = useState(false)
+    const scrollheader = () => {
+        if(window.innerWidth <= 375 ){
+            // if(window.scrollY >= 63){
+            //     setHeader(true)
+            // }else{
+            //     setHeader(false)
+            // }
+            window.scrollY >= 63 ? setHeader(true) : setHeader(false)
+        }else{
+            // if(window.scrollY >= 235){
+            //     setHeader(true)
+            // }else{
+            //     setHeader(false)
+            // }
+            window.scrollY >= 235 ? setHeader(true) : setHeader(false)
+        }
+        
+    }
+
+    window.addEventListener('scroll', scrollheader)
     return (
         <header className='fixed w-full'>
-            <nav className=" px-2 sm:px-4 py-2.5 ">
+            <nav className={` px-2 sm:px-4 py-2.5 naver ${header ? 'active' : ''}`}>
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
                     <a href="https://flowbite.com/" className="flex items-center">
                         <img

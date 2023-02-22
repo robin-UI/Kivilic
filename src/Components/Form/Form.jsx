@@ -1,5 +1,6 @@
 import { useRef, useState } from "react"
 import {FaTrashAlt} from 'react-icons/fa'
+import upload from '../../assets/upload.png'
 
 const Form = () => {
 
@@ -7,6 +8,7 @@ const Form = () => {
     const firstname = useRef()
     const lastName = useRef()
     const telephone = useRef()
+    const hiddneFiles = useRef()
     const [file, setfile] = useState(null)
     const [fileName, setFileName] = useState('')
 
@@ -122,13 +124,19 @@ const Form = () => {
                             >
                                 Upload CV
                             </label>
+
                             <input
-                                className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-white dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 "
-                                aria-describedby="file_input_help"
-                                id="file_input"
+                                className="hidden"
+                                ref={hiddneFiles}
                                 type="file"
                                 onChange={submitFile}
                             />
+
+                            <button type="button" onClick={() => hiddneFiles.current.click()} class="flex justify-between w-full text-[#20404A] bg-[#BFBFBF] hover:bg-[#BFBFBF] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 focus:outline-none">
+                                <h2>Upload CV</h2> 
+                                <img src={upload} alt="Upload Logo" className="w-[20px] h-[20px] " />
+                            </button>
+
                             <p
                                 className="mt-1 text-sm text-gray-500 dark:text-gray-300"
                                 id="file_input_help"

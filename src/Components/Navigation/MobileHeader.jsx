@@ -10,7 +10,7 @@ const MobileHeader = ({ setnav }) => {
             >
                 <h5
                     id="drawer-navigation-label"
-                    className="text-base font-semibold text-gray-500 uppercase dark:text-gray-400"
+                    className="text-base font-semibold text-[#02A4EF] uppercase dark:text-gray-400"
                 >
                     Menu
                 </h5>
@@ -75,7 +75,7 @@ const MobileHeader = ({ setnav }) => {
                                     <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                                 </svg>
                                 <span className="flex-1 ml-3 whitespace-nowrap">Service</span>
-                                <span className="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                                <span className="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-[#20DF95] rounded-full dark:bg-gray-700 dark:text-gray-300">
                                     Pro
                                 </span>
                             </a>

@@ -7,18 +7,8 @@ const Header = () => {
     const [header, setHeader] = useState(false)
     const scrollheader = () => {
         if(window.innerWidth <= 375 ){
-            // if(window.scrollY >= 63){
-            //     setHeader(true)
-            // }else{
-            //     setHeader(false)
-            // }
             window.scrollY >= 63 ? setHeader(true) : setHeader(false)
         }else{
-            // if(window.scrollY >= 235){
-            //     setHeader(true)
-            // }else{
-            //     setHeader(false)
-            // }
             window.scrollY >= 235 ? setHeader(true) : setHeader(false)
         }
         

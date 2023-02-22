@@ -1,3 +1,14 @@
 .main {
-    background: linear-gradient(180deg,#02a4ef 0.00%,#20df95 100.00%);
+    /* background: linear-gradient(180deg,#02a4ef 0.00%,#20df95 100.00%); */
+    /* background-image: url(../../assets/landingChair/Path\ 1.png); */
+    height: 100vh;
+}
+
+/* .chair{
+    height: 583px;
+    width: 350px;
+} */
+
+.chairImage{
+    width: 420px;
 }

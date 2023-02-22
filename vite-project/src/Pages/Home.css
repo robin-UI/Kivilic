@@ -1,0 +1,49 @@
+
+.home{
+    position: relative;
+    overflow: hidden;
+}
+
+.curv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65vh;
+    background: linear-gradient(180deg,#02a4ef 0.00%,#20df95 100.00%);
+    overflow: hidden;
+    line-height: 0;
+    z-index: -999;
+}
+
+/* .curv{
+    position: absolute;
+    
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(180deg,#02a4ef 0.00%,#20df95 100.00%);
+    background-image: url(/vite-project/public/Path\ 1.png);
+} */
+
+/* .curv::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #ffff;
+    transform: translate(85%, 60%);
+}
+
+.curv::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #20df95;
+    transform: translate(-5%, 40%);
+    z-index: -1;
+} */

@@ -11,8 +11,8 @@ import arrow from '../../assets/Path 832.png'
 const Footer = () => {
     return (
         <div className=''>
-            <div className='grid grid-cols-3 bg-gray-100 py-32 px-20'>
-                <div className="description">
+            <div className='md:grid md:grid-cols-3 bg-gray-100 py-32 px-20'>
+                <div className="description mb-6">
                     <img
                         src={footerlogo}
                         className="h-6 mr-3 sm:h-9 mb-8"
@@ -25,7 +25,7 @@ const Footer = () => {
                         location and package from the App or web. KIVLIK washes each vehicle using our Steam Cleaning system.
                     </p>
                 </div>
-                <div className="company flex justify-center">
+                <div className="company flex md:justify-center mb-6">
                     <div>
                         <h2 className="mb-6 text-xl font-semibold text-gray-500 uppercase dark:text-gray-400 footTitle">
                             COMPANY
@@ -105,18 +105,18 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div className='flex'>
+                    <div className='md:flex'>
                         <div className="appstore">
                             <img
                                 src={iStore}
-                                className=" mr-3 h-14 w-44"
+                                className=" mb-3 mr-3 h-14 w-44"
                                 alt="Apple Store"
                             />
                         </div>
                         <div className="gplay">
                             <img
                                 src={gPlay}
-                                className="mr-3 h-14 w-44"
+                                className="mb-3 mr-3 h-14 w-44"
                                 alt="Google Play"
                             />
                         </div>
